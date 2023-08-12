@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header') %>
+    <body id="page-top">
+<%- include('layouts/navbar') %>
+        <!-- About-->
+        <section class="page-section bg-dark px-4 px-lg-3">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white mt-0">ISSUE---<%= post.id.toString() %></h2>
+                <hr style="color: darkgray;">
+                <div class="container">                     
+                        <h5 style="color: aliceblue;"><%= post.title %></h5>
+                        <div class="container">
+                            <p style="color: azure;"><%= post.body %></p>
+                        </div>
+                        <div class="container flex-end">
+                             <small class="" style="color: aquamarine;">created on: <%= post.createdAt.toUTCString() %></small>
+                        </div>
+                        <div class="container py-md-3">
+                            <button class="btn btn-sm btn-outline-warning btn-flex flex-end">Track</button>
+                            <button class="btn btn-sm btn-outline-success btn-flex flex-end">Update</button>
+                            <button class="btn btn-sm btn-outline-danger m-auto mx-sm-1">Delete</button>
+                        </div>
+                        <hr style="color: darkgray;">
+                </div>
+            </div>
+      
+        </section>
+        <%- include('layouts/footer') %>
+        <%- include('layouts/scripts') %>
+    </body>
+</html>
+
+
+
+
