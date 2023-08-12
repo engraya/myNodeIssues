@@ -21,7 +21,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-
 const url = 'mongodb://127.0.0.1:27017/my_nodeDB';
 
 mongoose.connect(url, { family: 4 }, { useNewUrlParser: true });
